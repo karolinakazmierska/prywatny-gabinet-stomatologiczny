@@ -1,0 +1,50 @@
+$violet: #a240dd;
+$darkgrey: #342f3c;
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-box {
+    width: 50%;
+    height: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin-top: 10px;
+    }
+    li {
+        list-style: initial;
+        list-style-position: inside;
+        margin: 10px;
+        text-indent: -1.5em;
+        padding-left: 1em;
+    }
+}
+
+#box1 {
+    background-image: url("../images/bonus.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box2 {
+    background-color: $violet;
+    color: white;
+}
+
+#box3 {
+    background-color: $darkgrey;
+    color: white;
+}
+
+#box4 {
+    background-image: url("../images/4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
