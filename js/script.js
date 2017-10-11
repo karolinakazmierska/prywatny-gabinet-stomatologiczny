@@ -23,6 +23,11 @@ $(".hamburger").on("click", function() {
     $(".bar").toggleClass("clicked-hamburger-bar");
 });
 
+$(".hamburger-menu").find("li").on("click", function() {
+    $(".hamburger-menu").removeClass("visible-hamburger-menu");
+    $(".bar").removeClass("clicked-hamburger-bar");
+});
+
 // Gallery - zoom on click
 
 $(".image").on("click", function() {
