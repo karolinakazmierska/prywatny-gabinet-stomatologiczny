@@ -22,7 +22,6 @@ $darkgrey: #342f3c;
     width: 90%;
     height: auto;
     margin: 0 auto;
-    border: 1px solid blue;
     display: flex;
 }
 
@@ -44,6 +43,29 @@ h4 {
 
 .contact-map {
     width: 100%;
-    height: 100%;
+    height: 80%;
     border: 3px solid white;
+}
+
+.copyright {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* ----- Media Queries ----- */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-box {
+        width: 100%;
+    }
+    .contact-map {
+        width: 100%;
+        height: 300px;
+    }
 }
