@@ -8,3 +8,12 @@
 
 $violet: #a240dd;
 $darkgrey: #342f3c;
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: $darkgrey;
+}

@@ -1,0 +1,45 @@
+$violet: #a240dd;
+$darkgrey: #342f3c;
+
+header {
+    height: 600px;
+    width: 100%;
+    background-image: url("../images/7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .addon {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 10%);
+    }
+}
+
+.main-title {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.7);
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: max-content;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    span {
+        width: 80px;
+        height: 12px;
+        background-color: white;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+}
