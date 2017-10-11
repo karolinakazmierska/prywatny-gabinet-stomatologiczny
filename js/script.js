@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+$(document).ready(function() {
 
 
 // Adding static google map to footer
@@ -16,6 +16,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 initMap();
 
+// Hamburger menu
+
+$(".hamburger").on("click", function() {
+    $(".hamburger-menu").toggleClass("visible-hamburger-menu");
+    $(".bar").toggleClass("clicked-hamburger-bar");
+});
 
 
 
