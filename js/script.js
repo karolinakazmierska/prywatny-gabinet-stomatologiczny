@@ -23,8 +23,23 @@ $(".hamburger").on("click", function() {
     $(".bar").toggleClass("clicked-hamburger-bar");
 });
 
+// Gallery - zoom on click
 
+$(".image").on("click", function() {
 
+    if ($(window).width() > 881) {
+        $(".zoom-in").toggleClass("zoom-in-visible");
+        var image = $(this).find("img").clone();
+        $(".zoom-in").append(image);
+        $(".zoom-in").find("img").css("width", "100%");
+        $(".zoom-in").find("img").css("height", "100%");
+    }
+});
+
+$("#close").on("click", function() {
+    $(".zoom-in").removeClass("zoom-in-visible");
+    var image = $(".zoom-in").find("img").remove();
+})
 
 
 });

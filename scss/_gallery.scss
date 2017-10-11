@@ -1,6 +1,43 @@
 $violet: #a240dd;
 $darkgrey: #342f3c;
 
+@media screen and (min-width: 882px) {
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        border: 1px solid red;
+        .image {
+            margin: 20px;
+            position: relative;
+            &:hover {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 400px;
+                    height: 300px;
+                    background-color: $darkgrey;
+                    opacity: 0.8;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &::before {
+                    content: url("../images/magnifying-glass.png");
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+}
+
 .gallery {
     width: 100%;
     height: auto;
@@ -11,30 +48,35 @@ $darkgrey: #342f3c;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
     .image {
         margin: 20px;
         position: relative;
-        &:hover {
-            &::after {
-                content: "";
-                display: block;
-                width: 400px;
-                height: 300px;
-                background-color: $darkgrey;
-                opacity: 0.8;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            &::before {
-                content: url("../images/magnifying-glass.png");
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 1;
-            }
-        }
-
     }
+}
+
+.zoom-in {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 95vh;
+    width: auto;
+    border: 3px solid white;
+    z-index: 2;
+}
+
+#close {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: $violet;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+}
+
+.zoom-in-visible {
+    display: block;
 }
