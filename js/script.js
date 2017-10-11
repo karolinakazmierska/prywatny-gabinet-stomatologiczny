@@ -41,5 +41,15 @@ $("#close").on("click", function() {
     var image = $(".zoom-in").find("img").remove();
 })
 
+// Header, scrolling
+
+$(".addon").on("click", function() {
+    window.scrollBy({
+        top: 600,
+        left: 0,
+        behavior: 'smooth'
+    });
+})
+
 
 });
