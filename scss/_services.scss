@@ -48,3 +48,21 @@ $darkgrey: #342f3c;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* ----- Media Queries ----- */
+
+@media screen and (max-width: 1024px) {
+    .services-box {
+        width: 100%;
+        li {
+            text-indent: 0;
+        }
+    }
+    #box1, #box4 {
+        height: 500px;
+    }
+    #box2, #box3 {
+        height: auto;
+    }
+
+}
